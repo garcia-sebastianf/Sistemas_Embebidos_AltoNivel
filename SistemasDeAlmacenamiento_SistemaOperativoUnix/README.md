@@ -52,54 +52,56 @@ Estos sistemas de archivos han evolucionado con el tiempo para satisfacer las ne
 
 ## Inicios sistema Linux
 
-2. Abra una consola Linux, si no cuenta con wsl o con un sistema Linux. Para cada uno de los puntos adjunte una captura de pantalla y explique la salida. 
-Se opta por la instalación del sistema operativo basado en Linux (Ubuntu) sobre una máquina virtual (Oracle VM VirtualBox) para la realización de algunos puntos.
+**2. Abra una consola Linux, si no cuenta con wsl o con un sistema Linux. Para cada uno de los puntos adjunte una captura de pantalla y explique la salida. 
+Se opta por la instalación del sistema operativo basado en Linux (Ubuntu) sobre una máquina virtual (Oracle VM VirtualBox) para la realización de algunos puntos.**
 
 ![image](https://github.com/user-attachments/assets/64a948db-3291-4adf-ac64-63d4b59efe7a)
 
-a. Muestre el nombre de usuario actual. 
+**a. Muestre el nombre de usuario actual.** 
  ![image](https://github.com/user-attachments/assets/1f7f8850-5cd9-43a6-ad81-9792b4675499)
 
-	b. Muestre el hostname.
+**b. Muestre el hostname.**
  ![image](https://github.com/user-attachments/assets/1c44e503-6326-4ecf-9326-7877b1379eb8)
 
-	c. Corra #uname -a y explique la salida de este comando. 
+**c. Corra #uname -a y explique la salida de este comando.** 
 El comando uname proporciona información sobre el sistema. Dentro de este comando se encuentran la opción -a, el cual otorga la siguiente información del sistema: Nombre del kernel, nombre del nodo de red (hostame), fecha de lanzamiento del kernel, versión, nombre del hardware de la máquina, Plataforma del hardware y sistema operativo. 
  
 ![image](https://github.com/user-attachments/assets/85cca4c3-93da-449e-b484-c0a64455840b)
 
-
-	d. Liste el directorio actual por defecto. 
+**d. Liste el directorio actual por defecto.** 
  ![image](https://github.com/user-attachments/assets/173856be-821b-448d-b4f7-35c7966bc664)
 
- 
-e. En ese directorio debería encontrar dos archivos bench y hello.c (este punto lo puede hacer en https://bellard.org/jslinux/)
+**e. En ese directorio debería encontrar dos archivos bench y hello.c (este punto lo puede hacer en https://bellard.org/jslinux/)**
 
-f. Para correr el script bench.py ejecute lo siguiente: #python bench.py 
+**f. Para correr el script bench.py ejecute lo siguiente: #python bench.py** 
 
 ![image](https://github.com/user-attachments/assets/7af20682-97c9-4238-ba68-62af4e2596fb)
 
  
-g. Para medir cuanto tiempo tarda en ejecutar bench.py use el comando time y como argumento use la línea del punto anterior. 
+**g. Para medir cuanto tiempo tarda en ejecutar bench.py use el comando time y como argumento use la línea del punto anterior.** 
 ![image](https://github.com/user-attachments/assets/77f51e5b-3894-482c-94e6-c57b0869de4c)
 
  
 h. Para compilar el programa hello.c primero debe compilarlo, compílelo así: #gcc -o hello hello.c, Averigüe por su cuenta y explique en detalle cada argumento este comando. lo usaremos más adelante así que busque la ayuda de gcc o pidale a chatgpt que le explique los argumentos.
-gcc: Es el compilador de GNU para lenguaje C y otros lenguajes relacionados. Este comando se utiliza para compilar programas escritos en lenguaje C en un ejecutable. 
--o hello: El parámetro ‘-o’ se utiliza para especificar el nombre del archivo de salida (ejecutable). En este caso, se está indicando que el nombre del archivo ejecutable resultante será “hello”.
-hello.c: Es el nombre del archivo fuente que contiene el código en lenguaje C que se desea compilar. En este caso, se está asumiendo que existe un archivo llamado “hello.c” en el mismo directorio.
+
+- **gcc:** Es el compilador de GNU para lenguaje C y otros lenguajes relacionados. Este comando se utiliza para compilar programas escritos en lenguaje C en un ejecutable.
+  
+- **-o hello:** El parámetro ‘-o’ se utiliza para especificar el nombre del archivo de salida (ejecutable). En este caso, se está indicando que el nombre del archivo ejecutable resultante será “hello”.
+ 
+- **hello.c:** Es el nombre del archivo fuente que contiene el código en lenguaje C que se desea compilar. En este caso, se está asumiendo que existe un archivo llamado “hello.c” en el mismo directorio.
+  
 En resumen, el comando “gcc -o hello hello.c” compilará el archivo hello.c utilizando el compilador GCC y generará un archivo ejecutable llamado hello en el mismo directorio. Una vez compilado, podrás ejecutar este archivo para ejecutar el programa resultante. 
 Utilizando la ayuda desde consola de comandos:
 
 ![image](https://github.com/user-attachments/assets/8e344e20-5486-4a0c-88ba-92fbb9d95383)
 
  
-	i. Ejecute el binario que compiló.
+**i. Ejecute el binario que compiló.**
 
  ![image](https://github.com/user-attachments/assets/dec565da-4640-4f2c-8038-7d25636ba01e)
 
 
-3. Descargue la versión más reciente de Raspberry Pi OS y póngalo a funcionar en una raspberry pi (1, 2, 3, 4, Zero W)(A,B)(+).
+## 3. Descargue la versión más reciente de Raspberry Pi OS y póngalo a funcionar en una raspberry pi (1, 2, 3, 4, Zero W)(A,B)(+).
 
 Se realiza el siguiente procedimiento para la instalación y uso de la raspberry pi 3B+
 
@@ -137,7 +139,7 @@ Finalmente, se visualiza la interfaz gráfica de la tarjeta estableciendo la con
 Es importante resaltar que la conexión entre la raspberry pi 3B+ y el computador personal no requiere necesariamente de un cable rj45 para establecer la conexión. Una segunda opción es obteniendo la dirección ip de la tarjeta y establecer la conexión a partir de dicha dirección directamente con el programa VNC Viewer manteniendo los dos dispositivos conectados a la misma red local. 
 
 
-4. Use lsblk -f para describir los discos en su raspberry pi, explique cada una de las columnas producidas por este comando para cada fila. 
+## 4. Use lsblk -f para describir los discos en su raspberry pi, explique cada una de las columnas producidas por este comando para cada fila. 
 
 
 El comando lsblk se utiliza para obtener información de los dispositivos de bloque disponibles como discos duros, unidades flash, CD-ROM, etc. Con la opción -f se obtiene información adicional como nombres, tamaño, etiquetas de dispositivos, puntos de montaje, tipos de sistemas de archivos en los dispositivos, etc. Se obtuvo el siguiente resultado ejecutando este comando sobre la raspberry pi 3 B+.
@@ -146,22 +148,22 @@ El comando lsblk se utiliza para obtener información de los dispositivos de blo
 ![image](https://github.com/user-attachments/assets/7310381a-6e74-44cc-95dc-b0538a651d4e)
 
 
-Mmcblk0: Nombre del dispositivo de almacenamiento (Tarjeta microSD utilizada en la raspberry pi 3).
+- Mmcblk0: Nombre del dispositivo de almacenamiento (Tarjeta microSD utilizada en la raspberry pi 3).
 	
-Mmcblk0p1 y mmcblk0p2: Corresponden a las particiones en el dispositivo mmcblk0. La partición mmcblk01 utiliza el sistema de archivos FAT32 (vfat) y contiene los archivos de inicio del sistema (bootfs). La partición mmcblk0p2 utiliza el sistema de archivos ext4 y contiene el sistema de archivos raíz (rootfs) del sistema operativo. 
+- Mmcblk0p1 y mmcblk0p2: Corresponden a las particiones en el dispositivo mmcblk0. La partición mmcblk01 utiliza el sistema de archivos FAT32 (vfat) y contiene los archivos de inicio del sistema (bootfs). La partición mmcblk0p2 utiliza el sistema de archivos ext4 y contiene el sistema de archivos raíz (rootfs) del sistema operativo. 
 
-También se indica el tipo de sistema de archivos utilizado en cada partición FSTYPE. En este caso, la partición mmcblk0p1 utiliza FAT32 (vfat) y la partición mmcblk0p2 utiliza ext4.
+- También se indica el tipo de sistema de archivos utilizado en cada partición FSTYPE. En este caso, la partición mmcblk0p1 utiliza FAT32 (vfat) y la partición mmcblk0p2 utiliza ext4.
 
-LABEL: Es la etiqueta asignada al sistema de archivos. La partición mmcblk0p1 tiene la etiqueta “bootfs” y la partición mmcblk0p2 no tiene una etiqueta específica. 
+- LABEL: Es la etiqueta asignada al sistema de archivos. La partición mmcblk0p1 tiene la etiqueta “bootfs” y la partición mmcblk0p2 no tiene una etiqueta específica. 
 
-UUID: Es un identificado único universal asignado a casa sistema de archivos. Proporciona una forma única de identificar el sistema de archivos. En este caso, la partición mmcblk0p2 tiene el UUID “eaaa4faa-eab6-400c-950f-dc96ae4e0400”.
+- UUID: Es un identificado único universal asignado a casa sistema de archivos. Proporciona una forma única de identificar el sistema de archivos. En este caso, la partición mmcblk0p2 tiene el UUID “eaaa4faa-eab6-400c-950f-dc96ae4e0400”.
 
-FSAVAIL y FSUSE%: Indican la cantidad de espacio disponible en el sistema de archivos y el porcentaje de uso, respectivamente. 
+- FSAVAIL y FSUSE%: Indican la cantidad de espacio disponible en el sistema de archivos y el porcentaje de uso, respectivamente. 
 
-MOUNTPOINT: Es el punto de montaje de la partición en el sistema de archivos. La partición mmcblk0p1 está montada en /boot y la partición mmcblk0p2 está montada en el directorio raíz (“/”).
+- MOUNTPOINT: Es el punto de montaje de la partición en el sistema de archivos. La partición mmcblk0p1 está montada en /boot y la partición mmcblk0p2 está montada en el directorio raíz (“/”).
 
 
-5. Averigüe como configurar una IP fija a su raspberry pi con raspbian busque por lo menos dos métodos diferentes. 
+## 5. Averigüe como configurar una IP fija a su raspberry pi con raspbian busque por lo menos dos métodos diferentes. 
 
 En primer lugar, se determina la dirección ip actual de la raspberry, se puede realizar de dos formas: La primera utilizando el comando hostname -I y la segunda forma es con el comando ifconfig.
 
@@ -172,13 +174,6 @@ Utilizando comando hostname -I
 
 
 En caso de obtener dos direcciones ip, la primera corresponderá a la dirección ip asignada a una conexión ethernet, la segunda dirección ip corresponde a la dirección wifi. 
-
-
-
-
-
-
-
 
 Utilizando el comando ifconfig.
 
@@ -227,19 +222,19 @@ Se selecciona la opción wlan0 y se escriben los datos obtenidos anteriormente, 
 Se da click en aplicar, luego en cerrar y se procede a reiniciar el sistema para aplicar los cambios. 
 
 
-CONCLUSIONES. 
+## CONCLUSIONES. 
 
-•	Existen diversos sistemas de almacenamiento de datos desarrollados para distintos sistemas operativos e inclusive para diferentes aplicaciones.  Por ejemplo, pueden ser ya sea en sistemas operativos o en dispositivos portátiles de almacenamiento.
+- Existen diversos sistemas de almacenamiento de datos desarrollados para distintos sistemas operativos e inclusive para diferentes aplicaciones.  Por ejemplo, pueden ser ya sea en sistemas operativos o en dispositivos portátiles de almacenamiento.
 
-•	Los sistemas de almacenamiento de datos principalmente cumplen la función de organizar y administrar la información almacenada en bloques de memoria, esto es útil para saber en qué parte de la memoria inicia y en qué parte termina un archivo. Sin embargo, con el desarrollo de la tecnología, los servicios ofrecidos por estos sistemas de almacenamiento fueron cada vez mayores y más avanzados, como sistemas de cifrado, compresión y permisos de archivos, instantánea de archivos, mayor eficiencia en el el uso de la memoria, journaling para la recuperación de archivos, entre otros. 
+- Los sistemas de almacenamiento de datos principalmente cumplen la función de organizar y administrar la información almacenada en bloques de memoria, esto es útil para saber en qué parte de la memoria inicia y en qué parte termina un archivo. Sin embargo, con el desarrollo de la tecnología, los servicios ofrecidos por estos sistemas de almacenamiento fueron cada vez mayores y más avanzados, como sistemas de cifrado, compresión y permisos de archivos, instantánea de archivos, mayor eficiencia en el el uso de la memoria, journaling para la recuperación de archivos, entre otros. 
 
-•	El sistema operativo Linux sigue el estándar Unix. Esto significa que muchos comandos van a ser compatibles para diversos sistemas que se rijan con este estándar como Raspberry Pi OS basado en Debian o incluso para derivaciones del sistema operativo de Linux, como Ubuntu. 
+- El sistema operativo Linux sigue el estándar Unix. Esto significa que muchos comandos van a ser compatibles para diversos sistemas que se rijan con este estándar como Raspberry Pi OS basado en Debian o incluso para derivaciones del sistema operativo de Linux, como Ubuntu. 
 
-•	Es posible tener acceso al sistema operativo de la tarjeta raspberry pi 3 sin necesidad del uso de cables HDMI o pantallas. Ya que basta con buscar la dirección IP de la tarjeta en la red local por medio de algún programa o simplemente establecer una conexión SSH con el uso del Hostname. Después de realizada esta conexión se puede tener acceso a la interfaz gráfica del sistema.
+- Es posible tener acceso al sistema operativo de la tarjeta raspberry pi 3 sin necesidad del uso de cables HDMI o pantallas. Ya que basta con buscar la dirección IP de la tarjeta en la red local por medio de algún programa o simplemente establecer una conexión SSH con el uso del Hostname. Después de realizada esta conexión se puede tener acceso a la interfaz gráfica del sistema.
 
-•	La tarjeta raspberry pi 3 utiliza como disco la microSD y crea dos particiones en esta para dos distintas funciones como archivos para el inicio del sistema y datos del sistema. Para cada una de las particiones utiliza diferentes sistemas de almacenamiento. 
+- La tarjeta raspberry pi 3 utiliza como disco la microSD y crea dos particiones en esta para dos distintas funciones como archivos para el inicio del sistema y datos del sistema. Para cada una de las particiones utiliza diferentes sistemas de almacenamiento. 
 
-•	A pesar de que la tarjeta raspberry pi 3 B+ cuente con un sistema operativo e interfaz gráfica. Todo lo que se puede realizar con el uso del mouse y la interfaz se puede realizar de igual forma con el uso de comandos. Un ejemplo de esto es establecer la dirección ip estática, en el presente trabajo se mostraron dos formas distintas de establecer una dirección ip. A partir de la consola de comando y con el uso de los menús de opciones del sistema operativo. 
+- A pesar de que la tarjeta raspberry pi 3 B+ cuente con un sistema operativo e interfaz gráfica. Todo lo que se puede realizar con el uso del mouse y la interfaz se puede realizar de igual forma con el uso de comandos. Un ejemplo de esto es establecer la dirección ip estática, en el presente trabajo se mostraron dos formas distintas de establecer una dirección ip. A partir de la consola de comando y con el uso de los menús de opciones del sistema operativo. 
 
 
 
