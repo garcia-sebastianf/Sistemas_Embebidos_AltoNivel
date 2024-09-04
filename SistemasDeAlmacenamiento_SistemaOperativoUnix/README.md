@@ -1,6 +1,6 @@
 # Sistemas de Almacenamiento, Sistema Operativo Unix
 
-**1. ¿Qué sistemas de almacenado de datos o “filesystem” existen? NOTA no confundir con el fylesistem de Linux. Liste sólo los más populares mínimo 6. Haga una tabla haciendo una breve descripción por cada uno, describa algunas de sus características e historia i.e. NTFS, FAT, EXT#.**
+-**1. ¿Qué sistemas de almacenado de datos o “filesystem” existen? NOTA no confundir con el fylesistem de Linux. Liste sólo los más populares mínimo 6. Haga una tabla haciendo una breve descripción por cada uno, describa algunas de sus características e historia i.e. NTFS, FAT, EXT#.**
 
 **1. NTFS(New Technology File System):** Utilizado principalmente en sistemas operativos Windows. Proporciona características avanzadas como permisos de archivos, compresión y cifrado.
 
@@ -21,3 +21,5 @@
 **9. NFS(Network File System):** Utilizado en sistemas operativos Unix y Linux para acceder y compartir archivos en una red. Permite montar sistemas de archivos remotos en sistemas locales. 
 
 **10. EXT4(Fourth Extended File System):** Un sistema de archivos popular en sistemas Linux. Es una evolución de las versiones anteriores EXT2 y EXT3, con mejoras en la eficiencia y la capacidad para volúmenes más grandes. 
+
+
