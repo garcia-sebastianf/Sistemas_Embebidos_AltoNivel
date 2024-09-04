@@ -22,4 +22,4 @@
 
 - **10. EXT4(Fourth Extended File System):** Un sistema de archivos popular en sistemas Linux. Es una evolución de las versiones anteriores EXT2 y EXT3, con mejoras en la eficiencia y la capacidad para volúmenes más grandes. 
 
-
+## características e historia de los sistemas de almacenamiento enlistados anteriormente.
