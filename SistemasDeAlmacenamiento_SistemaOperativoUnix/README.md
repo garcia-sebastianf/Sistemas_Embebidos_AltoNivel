@@ -24,24 +24,24 @@
 
 ## características e historia de los sistemas de almacenamiento enlistados anteriormente.
 
-1. NTFS (New Technology File System):
--	Características: NTFS es el sistema de archivos estándar utilizado en sistemas operativos Windows. Ofrece características avanzadas como soporte para permisos de archivos y carpetas, compresión de archivos, cifrado de archivos y carpetas, journaling para recuperación ante fallos y particiones más grandes y eficientes que el sistema FAT. 
--	Historia: Fue introducido por primera vez en 1993 con Windows NT. Ha evolucionado con el tiempo, y versiones posteriores han añadido mejoras en términos de seguridad, rendimiento y confiabilidad. 
-2. FAT32(File Allocation Table 32):
--	Características: FAT32 es un sistema de archivos simple y ampliamente compatible. Puede manejar particiones de hasta 2 terabytes y archivos de hasta 4 gigabytes. No admite características avanzadas como permisos de archivo y cifrado.
--	Historia: Es una evolución del sistema FAT original (FAT12 y FAT16) y se introdujo para superar algunas de las limitaciones de sus predecesores. Es comúnmente utilizado en dispositivos portátiles y sistemas más antiguos. 
-3. exFAT (Extended File Allocation Table):
--	Características: exFAT es una extensión de FAT32 diseñada para abordar limitaciones en el tamaño de archivos y particiones. Es compatible con particiones más grandes y archivos más grandes que FAT32 y es utilizado comúnmente en dispositivos como cámaras digitales y unidades flash USB. 
--	Historia: Fue introducido por Microsoft en 2006 como parte de Windows CE 6.0. Se utiliza ampliamente en dispositivos portátiles debido a su capacidad de manejar archivos grandes.
+**1. NTFS (New Technology File System):**
+	-	Características: NTFS es el sistema de archivos estándar utilizado en sistemas operativos Windows. Ofrece características avanzadas como soporte para permisos de archivos y carpetas, compresión de archivos, cifrado de archivos y carpetas, journaling para recuperación ante fallos y particiones más grandes y eficientes que el sistema FAT. 
+	-	Historia: Fue introducido por primera vez en 1993 con Windows NT. Ha evolucionado con el tiempo, y versiones posteriores han añadido mejoras en términos de seguridad, rendimiento y confiabilidad. 
+**2. FAT32(File Allocation Table 32):**
+	-	Características: FAT32 es un sistema de archivos simple y ampliamente compatible. Puede manejar particiones de hasta 2 terabytes y archivos de hasta 4 gigabytes. No admite características avanzadas como permisos de archivo y cifrado.
+	-	Historia: Es una evolución del sistema FAT original (FAT12 y FAT16) y se introdujo para superar algunas de las limitaciones de sus predecesores. Es comúnmente utilizado en dispositivos portátiles y sistemas más antiguos. 
+**3. exFAT (Extended File Allocation Table):**
+	-	Características: exFAT es una extensión de FAT32 diseñada para abordar limitaciones en el tamaño de archivos y particiones. Es compatible con particiones más grandes y archivos más grandes que FAT32 y es utilizado comúnmente en dispositivos como cámaras digitales y unidades flash USB. 
+	-	Historia: Fue introducido por Microsoft en 2006 como parte de Windows CE 6.0. Se utiliza ampliamente en dispositivos portátiles debido a su capacidad de manejar archivos grandes.
 	
-4. HFS+ (Hierarchical File System Plus):
--	Características: HFS+ fue el sistema de archivos estándar en Mac OS desde 1998 hasta 2017. Ofrece mejoras en comparación con su predecesor HFS, incluyendo un esquema de nombres Unicode, mayor eficiencia y journaling para recuperación ante fallos.
--	Historia: Fue introducido junto con Mac OS 8.1 en 1998. Aunque ya no es el sistema de archivos predeterminado en macOS, todavía es compatible con versiones anteriores. 
+**4. HFS+ (Hierarchical File System Plus):**
+	-	Características: HFS+ fue el sistema de archivos estándar en Mac OS desde 1998 hasta 2017. Ofrece mejoras en comparación con su predecesor HFS, incluyendo un esquema de nombres Unicode, mayor eficiencia y journaling para recuperación ante fallos.
+	-	Historia: Fue introducido junto con Mac OS 8.1 en 1998. Aunque ya no es el sistema de archivos predeterminado en macOS, todavía es compatible con versiones anteriores. 
 
-5.  APFS (Apple File System):
--	Características: APFS es el sistema de archivos utilizado en macOS desde 2017. Ofrece instantáneas de archivos, soporte para cifrado nativo, gestión de espacio más eficiente y mejor rendimiento en unidades SSD. 
+**5.  APFS (Apple File System):**
+	-	Características: APFS es el sistema de archivos utilizado en macOS desde 2017. Ofrece instantáneas de archivos, soporte para cifrado nativo, gestión de espacio más eficiente y mejor rendimiento en unidades SSD. 
 -	Historia. Apple presentó APFS con macOS 10.13 High Sierra. Remplazó gradualmente a HFS+ como sistema de archivos predeterminado en dispositivos Apple. 
-6. F2FS (Flash-Friendly File System):
+**6. F2FS (Flash-Friendly File System):**
 -	Características: F2FS está diseñado específicamente para dispositivos de almacenamiento flash, como SSDs y tarjetas de memoria. Optimiza la asignación de bloques, la recolección de basura y el rendimiento para mejorar la vida útil de los dispositivos flash.
 -	Historia: Fue desarrollado por Samsung para dispositivos Android y se ha integrado en el kernel de Linux.
 
