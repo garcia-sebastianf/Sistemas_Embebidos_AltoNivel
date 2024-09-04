@@ -25,8 +25,8 @@
 ## características e historia de los sistemas de almacenamiento enlistados anteriormente.
 
 **1. NTFS (New Technology File System):**
-    - Características: NTFS es el sistema de archivos estándar utilizado en sistemas operativos Windows. Ofrece características avanzadas como soporte para permisos de archivos y carpetas, compresión de archivos, cifrado de archivos y carpetas, journaling para recuperación ante fallos y particiones más grandes y eficientes que el sistema FAT. 
-    - Historia: Fue introducido por primera vez en 1993 con Windows NT. Ha evolucionado con el tiempo, y versiones posteriores han añadido mejoras en términos de seguridad, rendimiento y confiabilidad.
+- Características: NTFS es el sistema de archivos estándar utilizado en sistemas operativos Windows. Ofrece características avanzadas como soporte para permisos de archivos y carpetas, compresión de archivos, cifrado de archivos y carpetas, journaling para recuperación ante fallos y particiones más grandes y eficientes que el sistema FAT. 
+- Historia: Fue introducido por primera vez en 1993 con Windows NT. Ha evolucionado con el tiempo, y versiones posteriores han añadido mejoras en términos de seguridad, rendimiento y confiabilidad.
   
 **2. FAT32(File Allocation Table 32):**
 -	Características: FAT32 es un sistema de archivos simple y ampliamente compatible. Puede manejar particiones de hasta 2 terabytes y archivos de hasta 4 gigabytes. No admite características avanzadas como permisos de archivo y cifrado.
