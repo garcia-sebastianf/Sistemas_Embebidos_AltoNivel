@@ -79,7 +79,8 @@ El comando uname proporciona información sobre el sistema. Dentro de este coman
 
  
 **g. Para medir cuanto tiempo tarda en ejecutar bench.py use el comando time y como argumento use la línea del punto anterior.** 
-![image](https://github.com/user-attachments/assets/77f51e5b-3894-482c-94e6-c57b0869de4c)
+
+<img src="https://github.com/user-attachments/assets/77f51e5b-3894-482c-94e6-c57b0869de4c" alt="image" width="300"/>
 
  
 h. Para compilar el programa hello.c primero debe compilarlo, compílelo así: #gcc -o hello hello.c, Averigüe por su cuenta y explique en detalle cada argumento este comando. lo usaremos más adelante así que busque la ayuda de gcc o pidale a chatgpt que le explique los argumentos.
